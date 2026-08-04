@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jadson Leitão — Desenvolvedor</title>
+<meta name="description" content="Portfólio de Jadson Leitão, desenvolvedor full stack. Python, Django, NestJS, Angular, PHP, IoT e mais.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-glow"></div>
+
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="brand">JL<span>.</span></a>
+    <nav class="nav-links" id="nav-links">
+      <a href="#sobre">Sobre</a>
+      <a href="#skills">Skills</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+      <a href="https://wa.me/qr/LC326ELDGEDFH1" target="_blank" rel="noopener" class="btn btn-primary btn-sm nav-cta">Fale comigo</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="top">
+    <div class="container hero-inner">
+      <p class="eyebrow">Olá, meu nome é</p>
+      <h1>Jadson Leitão</h1>
+      <h2 class="role">
+        <span id="typed"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-text">
+        Desenvolvedor apaixonado por transformar ideias em sistemas reais — do backend ao frontend,
+        de aplicações web a projetos de IoT. Gosto de entender o problema a fundo antes de escrever
+        a primeira linha de código.
+      </p>
+      <div class="hero-actions">
+        <a href="https://wa.me/qr/LC326ELDGEDFH1" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.07c-.24.68-1.4 1.3-1.93 1.37-.5.08-1.1.11-1.78-.11-.41-.13-.94-.3-1.61-.6-2.84-1.23-4.69-4.1-4.83-4.29-.14-.19-1.16-1.54-1.16-2.94s.72-2.08.98-2.37c.24-.26.53-.33.71-.33h.5c.16 0 .38-.03.58.44.24.58.82 2 .89 2.14.07.14.11.31.02.5-.09.19-.14.3-.27.46-.14.16-.29.36-.42.48-.14.14-.28.28-.12.55.16.28.72 1.2 1.55 1.94 1.06.95 1.96 1.25 2.24 1.39.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.19-.28.37-.23.61-.14.24.09 1.55.73 1.82.86.27.14.44.2.51.32.07.12.07.68-.17 1.36z"/></svg>
+          WhatsApp
+        </a>
+        <a href="https://github.com/JadsonTSI" target="_blank" rel="noopener" class="btn btn-outline">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.17c0 4.49 2.87 8.3 6.84 9.64.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.46-1.19-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.55 2.34 1.1 2.91.84.09-.66.35-1.1.63-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 2.5-.34c.85 0 1.71.11 2.5.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.17C22 6.58 17.52 2 12 2z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.instagram.com/jadson_leitao/" target="_blank" rel="noopener" class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zM12 0C8.74 0 8.33.01 7.05.07c-1.27.06-2.15.26-2.91.56a5.87 5.87 0 0 0-2.13 1.38A5.87 5.87 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91a5.87 5.87 0 0 0 1.38 2.13 5.87 5.87 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56 1.28.06 1.69.07 4.95.07s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.87 5.87 0 0 0 2.13-1.38 5.87 5.87 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.87 5.87 0 0 0-1.38-2.13A5.87 5.87 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zM12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4zm6.41-10.84a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44z"/></svg>
+          Instagram
+        </a>
+      </div>
+    </div>
+    <a href="#sobre" class="scroll-hint" aria-label="Rolar para baixo"><span></span></a>
+  </section>
+
+  <section class="section" id="sobre">
+    <div class="container">
+      <p class="section-tag">01 · Sobre</p>
+      <h3 class="section-title">Quem escreve o código</h3>
+      <div class="about-grid">
+        <p class="about-text">
+          Sou o Jadson — desenvolvedor full stack, movido por curiosidade técnica e gosto por resolver
+          problemas de ponta a ponta. Transito entre backend, frontend e sistemas embarcados, sempre
+          buscando entender como cada peça se conecta ao todo. Trabalho com Python e PHP no servidor,
+          Angular no cliente, bancos relacionais para guardar o que importa, e projetos de IoT quando
+          o software precisa sair da tela e tocar o mundo real. Escrevo testes porque código sem teste
+          é promessa, não garantia.
+        </p>
+        <div class="stat-cards">
+          <div class="stat-card">
+            <span class="stat-num">Full Stack</span>
+            <span class="stat-label">Backend + Frontend + IoT</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">MVC</span>
+            <span class="stat-label">Arquitetura e boas práticas</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">Linux</span>
+            <span class="stat-label">Ambiente de trabalho nativo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="container">
+      <p class="section-tag">02 · Skills</p>
+      <h3 class="section-title">Tecnologias que eu domino</h3>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <h4>Linguagens</h4>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">PHP</span>
+            <span class="tag">Lua</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h4>Frameworks &amp; Bibliotecas</h4>
+          <div class="tags">
+            <span class="tag">Django</span>
+            <span class="tag">NestJS</span>
+            <span class="tag">Angular</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h4>Frontend</h4>
+          <div class="tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h4>Banco de Dados</h4>
+          <div class="tags">
+            <span class="tag">MySQL</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h4>IoT &amp; Embarcados</h4>
+          <div class="tags">
+            <span class="tag">IoT</span>
+            <span class="tag">Lua</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h4>Ferramentas &amp; Infra</h4>
+          <div class="tags">
+            <span class="tag">Git</span>
+            <span class="tag">Linux</span>
+            <span class="tag">XAMPP</span>
+            <span class="tag">Pytest</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projetos">
+    <div class="container">
+      <p class="section-tag">03 · Projetos</p>
+      <h3 class="section-title">O que eu construí</h3>
+
+      <div class="project-card">
+        <div class="project-info">
+          <span class="project-kicker">Projeto em destaque</span>
+          <h4>Swell</h4>
+          <p>
+            Sistema web full stack desenvolvido em PHP com arquitetura MVC própria e banco de dados
+            MySQL. Conta com painel administrativo completo, gestão de conteúdo (páginas e blog),
+            área de usuário autenticada e roteamento próprio construído do zero — sem depender de
+            frameworks prontos.
+          </p>
+          <div class="tags">
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">MVC</span>
+            <span class="tag">XAMPP</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="more-projects">
+        Mais projetos e código no <a href="https://github.com/JadsonTSI" target="_blank" rel="noopener">GitHub</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="section contact-section" id="contato">
+    <div class="container">
+      <p class="section-tag">04 · Contato</p>
+      <h3 class="section-title">Vamos conversar?</h3>
+      <p class="contact-text">
+        Tem um projeto em mente ou quer trocar uma ideia sobre tecnologia? Me chama.
+      </p>
+      <div class="hero-actions">
+        <a href="https://wa.me/qr/LC326ELDGEDFH1" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.07c-.24.68-1.4 1.3-1.93 1.37-.5.08-1.1.11-1.78-.11-.41-.13-.94-.3-1.61-.6-2.84-1.23-4.69-4.1-4.83-4.29-.14-.19-1.16-1.54-1.16-2.94s.72-2.08.98-2.37c.24-.26.53-.33.71-.33h.5c.16 0 .38-.03.58.44.24.58.82 2 .89 2.14.07.14.11.31.02.5-.09.19-.14.3-.27.46-.14.16-.29.36-.42.48-.14.14-.28.28-.12.55.16.28.72 1.2 1.55 1.94 1.06.95 1.96 1.25 2.24 1.39.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.19-.28.37-.23.61-.14.24.09 1.55.73 1.82.86.27.14.44.2.51.32.07.12.07.68-.17 1.36z"/></svg>
+          Chamar no WhatsApp
+        </a>
+        <a href="https://github.com/JadsonTSI" target="_blank" rel="noopener" class="btn btn-outline">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.17c0 4.49 2.87 8.3 6.84 9.64.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.46-1.19-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.55 2.34 1.1 2.91.84.09-.66.35-1.1.63-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 2.5-.34c.85 0 1.71.11 2.5.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.17C22 6.58 17.52 2 12 2z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.instagram.com/jadson_leitao/" target="_blank" rel="noopener" class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zM12 0C8.74 0 8.33.01 7.05.07c-1.27.06-2.15.26-2.91.56a5.87 5.87 0 0 0-2.13 1.38A5.87 5.87 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91a5.87 5.87 0 0 0 1.38 2.13 5.87 5.87 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56 1.28.06 1.69.07 4.95.07s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.87 5.87 0 0 0 2.13-1.38 5.87 5.87 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.87 5.87 0 0 0-1.38-2.13A5.87 5.87 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zM12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4zm6.41-10.84a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44z"/></svg>
+          Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Jadson Leitão. Desenvolvedor.</span>
+    <a href="#top">Voltar ao topo ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
