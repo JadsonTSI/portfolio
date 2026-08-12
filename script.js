@@ -1,12 +1,8 @@
-// Menu mobile
 const burger = document.getElementById('burger');
 const nav = document.getElementById('nav');
 burger.addEventListener('click', () => nav.classList.toggle('open'));
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => nav.classList.remove('open'));
-});
+document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
 
-// Efeito de digitação nos cargos
 const roles = [
   'Desenvolvedor Full Stack',
   'Python & Django',
@@ -15,46 +11,27 @@ const roles = [
   'IoT & Sistemas Embarcados'
 ];
 const typedEl = document.getElementById('typed');
-let roleIndex = 0, charIndex = 0, deleting = false;
+let ri = 0, ci = 0, deleting = false;
 
 function typeLoop() {
-  const current = roles[roleIndex];
+  const current = roles[ri];
   if (!deleting) {
-    charIndex++;
-    typedEl.textContent = current.slice(0, charIndex);
-    if (charIndex === current.length) {
-      deleting = true;
-      setTimeout(typeLoop, 1400);
-      return;
-    }
+    ci++;
+    typedEl.textContent = current.slice(0, ci);
+    if (ci === current.length) { deleting = true; setTimeout(typeLoop, 1500); return; }
   } else {
-    charIndex--;
-    typedEl.textContent = current.slice(0, charIndex);
-    if (charIndex === 0) {
-      deleting = false;
-      roleIndex = (roleIndex + 1) % roles.length;
-    }
+    ci--;
+    typedEl.textContent = current.slice(0, ci);
+    if (ci === 0) { deleting = false; ri = (ri + 1) % roles.length; }
   }
-  setTimeout(typeLoop, deleting ? 35 : 60);
+  setTimeout(typeLoop, deleting ? 32 : 58);
 }
 typeLoop();
 
-// Animação de entrada ao rolar
-const revealTargets = document.querySelectorAll(
-  '.about-grid, .skills-grid .skill-card, .project-card, .contact-text'
-);
-revealTargets.forEach(el => el.classList.add('reveal'));
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('in-view');
-      observer.unobserve(entry.target);
-    }
-  });
+const targets = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
 }, { threshold: 0.15 });
+targets.forEach(t => io.observe(t));
 
-revealTargets.forEach(el => observer.observe(el));
-
-// Ano no rodapé
 document.getElementById('year').textContent = new Date().getFullYear();
